@@ -33,5 +33,12 @@
     "edad": 10,
     "correo": "fer@example.com",
     "dni": 6
+  },
+  {
+    "nombre": "juanita",
+    "apellido": "estella",
+    "edad": 25,
+    "correo": "juanita@example.com",
+    "dni": 7
   }
 ]

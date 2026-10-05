@@ -1,8 +1,0 @@
-1.Crear un archivo validaciones (nombre > de 3 letras)
-    Validar correo valido con expresiones regulares
-
-2. Dni automatico
-
-3. Crear endpoint para listar todos los datos de un aprendiz.
-
-4. Crear endpoint para eliminar un aprendiz.

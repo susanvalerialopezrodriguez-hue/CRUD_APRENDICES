@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CRUD Aprendices</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header><div><small>PANEL DE APRENDICES</small><h1>Personas en formación</h1></div><button id="new">+ Nuevo aprendiz</button></header>
+    <section class="stats"><div><span>Total registrados</span><b id="total">0</b></div><div><span>Estado</span><b>Activo</b></div><p>Administra los datos de tu grupo desde un solo lugar.</p></section>
+    <section class="directory"><div class="heading"><div><small>DIRECTORIO</small><h2>Lista de aprendices</h2></div><input id="search" type="search" placeholder="Buscar por nombre o correo..."></div><p id="message"></p>
+      <div class="table"><table><thead><tr><th>Aprendiz</th><th>Correo</th><th>Edad</th><th>DNI</th><th>Acciones</th></tr></thead><tbody id="rows"></tbody></table><div id="empty" hidden>No hay resultados.</div></div>
+    </section>
+  </main>
+  <dialog id="modal"><form id="form" enctype="multipart/form-data"><div class="modal-title"><div><small>REGISTRO</small><h2 id="form-title">Nuevo aprendiz</h2></div><button id="close" type="button">x</button></div><input id="dni" type="hidden"><div class="fields"><label>Nombre<input id="nombre" name="nombre" required minlength="4"></label><label>Apellido<input id="apellido" name="apellido"></label><label>Edad<input id="edad" name="edad" type="number" min="1"></label><label>Correo<input id="correo" name="correo" type="email" required></label><label class="file">Imagen<input id="imagen" name="imagen" type="file" accept="image/*"></label></div><p id="error"></p><footer><button id="cancel" class="muted" type="button">Cancelar</button><button type="submit">Guardar aprendiz</button></footer></form></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
